@@ -1,0 +1,119 @@
+body{
+    background: url("tlo1.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+div.container{
+    width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+}
+div.maincontent{
+    width: 70%;
+    float: left;
+
+}
+div.sidebar{
+    width: 30%;
+    float: left;
+}
+div.content{
+    overflow: auto;
+}
+article, side,footer,header,section{
+    display: block;
+}
+article, .title,footer,aside{
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+}
+header{
+    margin-bottom: 15px;
+}
+article{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: auto;
+    text-align: justify;
+}
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
+figure{
+    float: left;
+    border-right: 2px dashed;
+    border-bottom: 2px dashed;
+    padding: 10px;
+}
+figcaption{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    overflow: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 0;
+
+}
+nav ul li{
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul li a span{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.home, .login, .register, .about{
+    background: rgba(255,255,100,0.5);
+
+}
+
+.register{
+    float: right;
+}
+.login{
+    float: right;
+}
+form{
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+}
+form div.row{
+    width: 50%;
+    margin:auto;
+    margin-bottom: 15
+}
+form label{
+    width: 30%;
+    text-align: end;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+form input, form select{
+    padding: 5px;
+    border-radius: 8px;
+    width: 200px;
+
+}
+form div.row:last-of-type{
+   text-align: center;
+}

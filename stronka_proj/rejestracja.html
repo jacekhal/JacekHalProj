@@ -1,0 +1,90 @@
+<!DOCUTYPE html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Responsywna Strona Internetowa"/>
+        <link rel="stylesheet" href="style.css">
+        <title>Strona Internetowa Projekt</title>
+    </head>
+    <body>
+       <div class="container">
+        <header>
+           <div class="title">
+                <h1>Aplikacje internetowe</h1>
+            </div>
+               <nav>
+                <ul>
+                    <li class="home"><a href="index.html"><span>Start</span></a></li>
+                    <li class="about"><a href="about.html"><span>O mnie</span></a></li>
+                    <li class="login"><a href="logowanie.html"><span>Logowanie</span></a></li>
+                   </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <section>
+                <form action="#" method="post" autocomplete="off">
+                    <div class="row">
+                        <label for="name">Imię i nazwisko</label>
+                        <input id="name"type="text" required autofocus="true">
+                    </div>
+                    <div class="row">
+                        <label for="email">Adres e-mail</label>
+                        <input id="email"type="email" required >
+                    </div>
+                    <div class="row">
+                        <label for="password">Hasło</label>
+                        <input id="password"type="password" required >
+                    </div>
+                    <div class="row">
+                        <label for="date">Data urodzenia</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="row">
+                        <label for="gender">Płeć</label>
+                        <select id="gender">
+                            <option>Mężczyzna</option>
+                            <option>Kobieta</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label for="region">Województwo</label>
+                        <input id="region"type="text" list="regions">
+                        <datalist id="regions">
+                            <option value="dolnośląskie"></option>
+                            <option value="kujawsko-pomorskie"></option>
+                            <option value="lubelskie"></option>
+                            <option value="lubuskie"></option>
+                            <option value="łódzkie"></option>
+                            <option value="małopolskie"></option>
+                            <option value="mazowieckie"></option>
+                            <option value="opolskie"></option>
+                            <option value="podkarpackie"></option>
+                            <option value="podlaskie"></option>
+                            <option value="pomorskie"></option>
+                            <option value="śląskie"></option>
+                            <option value="świętokrzyskie"></option>
+                            <option value="warmińsko-mazurskie"></option>
+                            <option value="wielkopolskie"></option>
+                            <option value="zachodniopomorskie"></option>
+                        </datalist>
+
+                    </div>
+                    <div class="row">
+                        <label for="code">Kod Pocztowy</label>
+                        <input id="code" type="text" pattern="^\d{2}-\d{3}$" placeholder="XX-XXX">
+                    </div>
+                    <div class="row">
+                        <input type="submit">
+                    </div>
+
+                </form>
+            </section>
+        </div>
+
+        <footer>Wszelkie prawa zastrzeżone &copy</footer>
+    </div>
+    </body>
+</html>
